@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+    <body>
+        <!--Div para intensidade da Senha-->
+        <div class="container">
+            <input type="password" id="inputpass" placeholder="Digite Sua Senha"> 
+            <button id="buttonshowpass" onclick="showpassword()" >
+            <img src="https://cdn-icons-png.flaticon.com/256/1279/1279615.png" alt="" id="buttonimg">
+            </button> <br> 
+            Intensidade da Senha: <span class="strongpass"></span> <br>
+            <button id="definepass">Definir Senha</button>
+    </div>    
+       
+    <!--Div para Mudar de tema-->
+       <div class="Thememode">
+        <!--Modo Escuro-->
+        
+        <label class="radiolabel">
+        <input type="radio" name="Changemode" id="Escuro">
+        <img src="https://cdn-icons-png.flaticon.com/512/6559/6559203.png" alt="ImgDarkTheme" id="DarkImg">
+        </label>
+
+        <!--Modo Claro-->
+
+        <label class="radiolabel">
+        <input type="radio" name="Changemode" id="Claro">
+        <img src="https://cdn-icons-png.flaticon.com/256/9025/9025746.png" alt="ImgWhiteTheme" id="WhiteImg">
+        </label>
+    </div>
+    <br>    
+    
+    <script src="code.js"></script>
+    </body>
+</html>
