@@ -26,4 +26,4 @@ Uma interface simples e intuitiva que mostra a intensidade da senha digitada, co
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/password-strength.git
+git clone https://github.com/DarwinGAZ/password-strength.git
