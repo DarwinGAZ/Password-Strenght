@@ -2,9 +2,9 @@
 
 Uma interface simples e intuitiva que mostra a intensidade da senha digitada, com a possibilidade de alternar entre **modo claro** e **modo escuro**.
 
-## 📸 Demonstração
+## 🚀 Acesse o projeto online
 
-![Demonstração da interface](https://user-images.githubusercontent.com/DarwinGAZ/demo-password-strength.gif)
+🔗 [Clique aqui para testar](https://darwingaz.github.io/Password-Strenght/)
 
 > ✅ A senha é analisada em tempo real e classificada como: **Neutra**, **Fraca**, **Média** ou **Forte**.
 
