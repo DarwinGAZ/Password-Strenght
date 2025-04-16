@@ -1,106 +1,89 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: background-color 0.3s, color 0.3s, filter 0.3s, transform 0.2s;
-    font-family: Arial, sans-serif;
 }
 
+
 body {
+    font-family: Arial;
     font-size: 15pt;
+    margin: 0px;
     height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-    color: black;
 }
 
-/* Container da senha */
-.container {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    width: 320px;
-    text-align: center;
-}
-
-/* Espaçamento entre os elementos */
-.container > * {
-    margin-bottom: 12px;
-    padding: 2px;
-}
-
-/* Campo de senha */
-#inputpass {
-    height: 35px;
-    border-radius: 6px;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-    width: 85%;
-    font-size: 14px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-#inputpass:focus {
-    outline: none;
-    border: 2px solid #007bff;
-}
-
-/* Botão para mostrar senha */
+/* Substitui o botão pela imagem */
 #buttonshowpass {
-    background: transparent;
+    background-size: cover;
+    background-color: transparent;
     border: none;
-    margin-left: 5px;
+    margin-left: 2px;
     cursor: pointer;
 }
 
+/* Define o tamanho da imagem */
 #buttonimg {
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
     vertical-align: middle;
 }
 
-/* Botão de definir senha */
+/* Tamanho e borda do input */
+#inputpass {
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Organiza os itens na div */
+.container {
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+}
+
+/* Dá um espaçamento entre os elementos dentro da div */
+.container > * {
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+/* Altera a cor do button */
 #definepass {
-    margin-top: 10px;
-    padding: 8px 12px;
+    margin-top: 5px;
+    padding: 5px;
     background-color: white;
     color: black;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-#definepass:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-/* Indicador de tema (radio + imagem) */
+/* Organiza e da um espaçamento nas imagens do changemode */
 .Thememode {
     position: absolute;
-    top: 15px;
-    right: 15px;
     display: flex;
-    gap: 8px;
+    top: 10px;
+    right: 10px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 5px;
 }
 
-/* Esconde o botão do radio */
+/* Tira os Botões padrões do radio */
 input[type="radio"] {
     display: none;
 }
 
+/* Ajusta o tamanho das imagens*/
 .radiolabel img {
     width: 35px;
     height: 35px;
-    cursor: pointer;
+    cursor: pointer; /* Quando colocar o mouse em cima, vira um ponteiro */
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Efeito ao passar o mouse */
+/* Efeito de "subir" ao passar o mouse */
 .radiolabel img:hover {
-    transform: translateY(-4px) scale(1.05);
+    transform: translateY(-5px); /* Faz a imagem subir */
 }
